@@ -1,0 +1,6 @@
+{
+  "appId": "com.marcuson.angularionicdemo",
+  "appName": "Angular Ionic Demo",
+  "bundledWebRuntime": false,
+  "webDir": "dist"
+}
