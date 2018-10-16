@@ -37,6 +37,12 @@ https://beta.ionicframework.com/docs/intro):
 
 ## Developer section
 
+### Prerequisites
+
+- Node and npm installed (tested with version 8.11.4 and 6.4.0)
+- Java installed (for Android builds, tested with version 1.8.0_181)
+- run `npm i` on project root to install all required deps
+
 ### Web
 
 - **Serve locally**: run `npm run web:serve`, app listens on port `4005` via browser.
