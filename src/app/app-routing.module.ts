@@ -12,6 +12,14 @@ const routes: Routes = [
     loadChildren: './modules/home/home.module#HomeModule',
   },
   {
+    path: 'interaction',
+    loadChildren: './modules/interaction/interaction.module#InteractionModule',
+  },
+  {
+    path: 'elements',
+    loadChildren: './modules/elements/elements.module#ElementsModule',
+  },
+  {
     path: 'list',
     loadChildren: './modules/list/list.module#ListModule',
   },

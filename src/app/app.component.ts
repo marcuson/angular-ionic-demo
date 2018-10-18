@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Platform } from '@ionic/angular';
 
 @Component({
-  selector: 'abs-root',
+  selector: 'ais-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
@@ -14,6 +14,16 @@ export class AppComponent {
       title: 'Home',
       url: '/home',
       icon: 'home',
+    },
+    {
+      title: 'Interaction',
+      url: '/interaction',
+      icon: 'hand',
+    },
+    {
+      title: 'Elements',
+      url: '/elements',
+      icon: 'albums',
     },
     {
       title: 'List',
