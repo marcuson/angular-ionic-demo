@@ -15,9 +15,9 @@ Access to native mobile functionalities is granted via
 [Ionic Capacitor](https://capacitor.ionicframework.com/) (more on this below), but one can also
 choose to use plain old Cordova.
 
-### Ionic framework
+### Ionic Framework
 
-What is Ionic Framework, excerpt from Ionic v4 introduction web page (check full page at
+Excerpt from Ionic v4 introduction web page (check full page at
 https://beta.ionicframework.com/docs/intro):
 
 > Ionic Framework is an open source UI toolkit for building performant, high-quality mobile and
@@ -29,11 +29,62 @@ https://beta.ionicframework.com/docs/intro):
 > using a simple script include.
 
 > Currently, Ionic Framework has official integration with Angular, but support for Vue and React
-> are in development."
+> are in development.
+
+### Ionic Native
+
+Excerpt from Ionic v4 dosc (check full page at https://ionicframework.com/docs/native/):
+
+> Ionic Native is a TypeScript wrapper for Cordova/PhoneGap plugins that make adding any native
+> functionality you need to your Ionic mobile app easy.
+
+### Ionic Capacitor
+
+Excerpt from Ionic Capacitor introduction web page (check full page at
+https://capacitor.ionicframework.com/docs/):
+
+> Capacitor is a cross-platform app runtime that makes it easy to build web apps that run natively
+> on iOS, Android, Electron, and the web. We call these apps "Native Progressive Web Apps" and they
+> represent the next evolution beyond Hybrid apps.
+
+> Capacitor provides a consistent, web-focused set of APIs that enable an app to stay as close to
+> web-standards as possible, while accessing rich native device features on platforms that support
+> them. Adding native functionality is easy with a simple Plugin API for Swift on iOS, Java on
+> Android, and JavaScript for the web.
+
+> Capacitor is a spiritual successor to Apache Cordova and Adobe PhoneGap [...]. Capacitor has
+> backwards-compatible support for many existing Cordova plugins.
+
+> Getting started with Capacitor is easy! Capacitor can be used as a drop in to any existing modern
+> JavaScript project, or used to create a fresh Capacitor project from scratch.
 
 ### Ionic DevApp
 
-### Ionic Capacitor
+Excerpt from Ionic Pro docs (check full page at https://ionicframework.com/docs/pro/devapp/ and
+don't worry, even if in the Pro section, the app is free :wink:):
+
+> The Ionic DevApp is a free app that makes it easy to run your Ionic app directly on your iOS or
+> Android device.
+
+> Skip dealing with frustrating Native SDK installation issues, just run ionic serve -c, open the
+> DevApp, connect to the same network, and the app will automatically load and run your app.
+
+> The DevApp comes with many native plugins built right in, so you don’t need to worry about
+> installing plugins.
+
+### Want more?
+
+The Ionic team is offering some paid features and developing some other kick-ass projects you might
+want to check out:
+
+- [Stencil](https://stenciljs.com/): build reusable web-components adhering to recent Web standards.
+- [Ionic Creator](https://ionicframework.com/pro#prototyping): online WYSIWYG tool for rapid app
+  prototyping.
+- [Ionic Deploy](https://ionicframework.com/pro#updates): hot code updates/bugfixes for your app.
+- [Ionic Package](https://ionicframework.com/pro#build): build your app in the cloud for all major
+  platforms (no more need to buy a Mac to build for iOS :clap:).
+- [Ionic Monitor](https://ionicframework.com/pro#reporting): runtime error monitoring to deliver
+  bug-free app.
 
 ## Developer section
 
@@ -51,11 +102,15 @@ https://beta.ionicframework.com/docs/intro):
 
 ### Mobile
 
-NOTE: Tested only for Android build (I don't have a Mac sorry :P).
+NOTE: Tested only for Android build (I don't have a Mac sorry :stuck_out_tongue:).
 
 - **Serve locally**: run `npm run mobile:serve`, app listens on port `4005` via browser, browser can
   emulate iOS and Android platforms on port `8200`, or the live server can be accessed
   via [Ionic DevApp](https://ionicframework.com/docs/pro/devapp/) installed on your mobile (only if
   you are on the same network!).
-- **Build**: run `npm run mobile:build:dev`, `npm run mobile:build:rc` or
-  `npm run mobile:build:prod` according to the environment you want to build for.
+- **Build**:
+  1. run `npm run mobile:build:dev`, `npm run mobile:build:rc` or
+     `npm run mobile:build:prod` according to the environment you want to build for.
+  2. go into `android` directory (`cd ./android`) and run `./gradlew assembleDebug` (Android
+     specific, debug build). An APK will be created under `./android/app/build/outputs/apk/debug`
+     directory, which you can install on your mobile.
