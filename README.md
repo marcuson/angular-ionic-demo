@@ -33,7 +33,7 @@ https://beta.ionicframework.com/docs/intro):
 
 ### Ionic Native
 
-Excerpt from Ionic v4 dosc (check full page at https://ionicframework.com/docs/native/):
+Excerpt from Ionic docs (check full page at https://ionicframework.com/docs/native/):
 
 > Ionic Native is a TypeScript wrapper for Cordova/PhoneGap plugins that make adding any native
 > functionality you need to your Ionic mobile app easy.
