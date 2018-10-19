@@ -41,6 +41,11 @@
   <ion-button expand="block" color="dark" (click)="openLoading()">
     Show Loading
   </ion-button>
+  <ion-button expand="block" color="dark" (click)="takePhoto()">
+    Photo (Capacitor)
+  </ion-button>
+
+  <img [src]="imageUrl">
 
   <ion-item>
     <ion-label>Cool checkbox here</ion-label>

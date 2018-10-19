@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { CameraResultType, CameraSource, Plugins } from '@capacitor/core';
 // tslint:disable-next-line:max-line-length
 import {
   ActionSheetController,
@@ -6,6 +8,7 @@ import {
   LoadingController,
   ToastController,
 } from '@ionic/angular';
+import '@ionic/pwa-elements';
 
 @Component({
   selector: 'ais-interaction',
@@ -13,11 +16,14 @@ import {
   styleUrls: ['interaction.component.scss'],
 })
 export class InteractionPageComponent implements OnInit {
+  imageUrl: SafeResourceUrl;
+
   constructor(
     private actionSheetCtrl: ActionSheetController,
     private toastController: ToastController,
     private alertController: AlertController,
-    private loadingController: LoadingController
+    private loadingController: LoadingController,
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {}
@@ -80,5 +86,16 @@ export class InteractionPageComponent implements OnInit {
       translucent: true,
     });
     return await loading.present();
+  }
+
+  async takePhoto() {
+    const image = await Plugins.Camera.getPhoto({
+      quality: 90,
+      allowEditing: true,
+      resultType: CameraResultType.Base64,
+      source: CameraSource.Camera,
+    });
+
+    this.imageUrl = this.sanitizer.bypassSecurityTrustResourceUrl(image && image.base64Data);
   }
 }
