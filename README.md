@@ -15,6 +15,13 @@ Access to native mobile functionalities is granted via
 [Ionic Capacitor](https://capacitor.ionicframework.com/) (more on this below), but one can also
 choose to use plain old Cordova.
 
+Some useful links to better understand the following part:
+
+- https://developer.telerik.com/featured/what-is-a-hybrid-mobile-app/
+- https://cordova.apache.org/
+- https://phonegap.com/
+- https://developers.google.com/web/progressive-web-apps/
+
 ### Ionic Framework
 
 Excerpt from Ionic v4 introduction web page (check full page at
@@ -72,7 +79,7 @@ don't worry, even if in the Pro section, the app is free :wink:):
 > The DevApp comes with many native plugins built right in, so you don’t need to worry about
 > installing plugins.
 
-### Want more?
+### Want more Ionic?
 
 The Ionic team is offering some paid features and developing some other kick-ass projects you might
 want to check out:
