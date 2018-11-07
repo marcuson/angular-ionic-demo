@@ -1,4 +1,4 @@
-package org.sintraconsulting.angularionicstarter;
+package com.marcuson.angularionicdemo;
 
 import android.os.Bundle;
 

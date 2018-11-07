@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Angular Ionic Starter</string>
-    <string name="title_activity_main">Angular Ionic Starter</string>
-    <string name="package_name">org.sintraconsulting.angularionicstarter</string>
-    <string name="fileprovider_authority">org.sintraconsulting.angularionicstarter.fileprovider</string>
-    <string name="custom_url_scheme">org.sintraconsulting.angularionicstarter</string>
+    <string name="app_name">Angular Ionic Demo</string>
+    <string name="title_activity_main">Angular Ionic Demo</string>
+    <string name="package_name">com.marcuson.angularionicdemo</string>
+    <string name="fileprovider_authority">com.marcuson.angularionicdemo.fileprovider</string>
+    <string name="custom_url_scheme">com.marcuson.angularionicdemo</string>
 </resources>
